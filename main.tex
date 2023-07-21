@@ -1,0 +1,146 @@
+\documentclass{llresume}
+
+\usepackage{fancyhdr}
+
+\definecolor{accentcolor}{HTML}{BD5D38}
+\definecolor{fillcolor}{HTML}{C9F0FE}
+\definecolor{headingcolor}{HTML}{1C4C5F}
+
+\renewcommand{\emph}[1]{{\bfseries\color{accentcolor}#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Personal information
+%
+% For contacts and other info, you can use \infoGeneric{<icon>}{<text>}[<link>]
+% to add a line of information, or one of the following shortcuts in the form
+% \info<Shortcut>{<text>}[<link>]:
+%
+% \infoEmail          \infoDate           \infoLinkedin       \infoBook
+% \infoPhone          \infoPlace          \infoGithub         \infoAuthor
+% \infoAddress        \infoLink           \infoInstagram      \infoTools
+% \infoBirthday       \infoHomepage       \infoFlickr
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\name{``JUNE''}{Nathan Richardson}[they/them]
+
+\photo{photo.png}
+
+\personalinfo{
+    \infoAddress{Virginia, USA}
+    \infoEmail{junein2002@gmail.com}[mailto:junein2002@gmail.com]
+    \infoHomepage{\textbf{\emph{june-richardson.github.io}}}[https://june-richardson.github.io]
+    \infoLinkedin{www.linkedin.com/in/nathan-richardson-b02614229}[https://www.linkedin.com/in/nathan-richardson-b02614229/]
+    \infoGithub{github.com/ceskergabbro}[https://github.com/ceskergabbro]
+}
+
+\tagline{
+    I am an undergraduate student with a passion for \emph{educating others} and \emph{conducting research}. I believe that \emph{education} empowers individuals to change the world for the better, and \emph{education} is moreover supported by humanity's continuous search for \emph{new knowledge} via academic and industrial \emph{research}.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Main pane
+%
+% Each section of the main pane is enclosed within an environment of the form
+% \begin{mainsection}{<section title>} ... \end{mainsection}
+%
+% Available commands:
+%
+% \entryJob{<title>}[<descr>]{<location>}{<date>}
+% \entryPub{<title>}[<descr>]{<authors>}{<journal/conference>}{<DOI/link>}
+% \entrySkills[<title>]{<list of skills>}
+% \entryTags[<title>]{<list of tags>}
+% \entryGeneric{<title>}[<descr>][<info>][<info>][<info>]
+%
+% Skill and tag commands:
+%
+% \skill{<name>}{<score>}
+% \simpleskill[<icon>]{<name>}
+% \boxedtag[<icon>]{<name>}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\makeheader
+
+\begin{mainpane}
+    \begin{mainsection}{Technical Experience}
+        \entryJob
+            {ANALYST (FEDERAL EMPLOYEE, ND-02)}
+            [For my second summer working at Dahlgren, I fulfil the roles as a project designer on an agile team \par as well as a continuing researcher on the same geophysical team I was with in 2022. Software I help plan, design, and develop is currently being used for SLBM fire control on US submarines.]
+            {Naval Surface Warfare Center: DAHLGREN}
+            {May 2023 -- Present}
+        \entryJob
+            {REPORTER, DATA ANALYST}
+            [I designed elegant reports that presented key information to the executive team at a Virginia-wide company. Additionally, I completed projects that utilized historical data to detect trends, shared them with the executives, and proposed solutions that ensure optimal results.]
+            {T\&T Distribution}
+            {May 2021 -- May 2023}
+        \entryJob
+            {ANALYST (CONTRACTOR, SAXMAN ONEt)}
+            [While a contractor, I developed a solution to a previously-unsolved problem in geophysical research relating to gravitational disturbances. My results from this project significantly increased the accuracy of the Trident II weapon system.]
+            {Naval Surface Warfare Center: DAHLGREN}
+            {May 2022 -- July 2022}
+    \end{mainsection}
+
+    \begin{mainsection}{Awards \& Certifications}
+        \entryTags{
+            \boxedtag{Certificate in Naval Combat Systems}
+            \boxedtag{Technology to the Warfighter Award}
+            \boxedtag{Full Secret Clearance}
+            \boxedtag{Putnam Competition Finalist}
+        }
+       % More on \infoHomepage{\emph{june-richardson.github.io}}[https://june-richardson.github.io]
+    \end{mainsection}
+
+   
+    
+    \begin{mainsection}{Education}
+        \entryJob
+            {VIRGINIA WESLEYAN UNIVERSITY (GPA: 3.96)}
+            [Bachelor of Science. Mathematics; minors in Computer Science and Data Science \\
+            \vspace{1mm} Bachelor of Musical Arts. Music Technology \par and Composition]
+            {Virginia Beach, VA}
+            {August 2020 -- May 2024 (Projected)}
+        \entryJob
+            {MASSAPONAX HIGH SCHOOL (GPA: 4.00) \\ COMMONWEALTH GOVERNOR'S SCHOOL}
+            [Advanced Studies Diploma]
+            {Spotsylvania, VA}
+            {August 2016 -- May 2020}
+    \end{mainsection}
+
+    \begin{mainsection}{Skills \& languages}
+        \entrySkills[Computer / Tools]{
+            \simpleskill{\LaTeX}
+            \simpleskill{Java}
+            \simpleskill{R for Data Science}\par
+            \simpleskill{Python}
+            \simpleskill{Git}
+            \simpleskill{HTML/CSS}
+        }
+        \entrySkills[Featured Soft Skills (Details on Website)]{            
+            \simpleskill{Strong Communication Abilities}
+            \simpleskill{Problem Solving}
+            \simpleskill{Adaptability}
+        }
+        \entrySkills[Languages]{
+            \skill{English}{3}
+            \skill{Spanish}{2}\\
+            Open to expanding
+        }
+    \end{mainsection}
+
+    
+    \begin{mainsection}{Projects}
+        \entryGeneric
+            {This LaTeX r\'esum\'e}
+        \entryGeneric
+            {The strange look of cats on Mars}
+            [A collection of the strangest photos of cats]
+            [\infoFlickr
+                {www.flickr.com/ceskergabbro/catsonmars}
+                [https://www.flickr.com/ceskergabbro/catsonmars]]
+    \end{mainsection} 
+
+    
+\end{mainpane}
+
+\end{document}
